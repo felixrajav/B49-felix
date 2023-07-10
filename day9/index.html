@@ -4,17 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application Form </title>
+    <link rel="stylesheet" href="./index.css">
 </head>
-<body>
-    <h1>Application Form</h1>
+<body style="background-color:rgb(244, 185, 113));">
+    <div style="padding: 20px; border: 5px solid;background-color: azure;">
+    <h1 style="color: rgb(84, 11, 242);font-size: 30px;">Application Form</h1>
     <form action="form">
-        <label for="name">Name</label>
-        <input type="text">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+        </div>
+        <br>
+       <div>
         <label for="Email">Email:</label>
-        <input type="email">
-        <label for="Password">passWord</label>
-        <input type="password">
-        <input type="submit" value="submit">
+        <input type="email" id="Email">
+       </div>
+       <br>
+       <div>
+        <label for="Password">passWord:</label>
+        <input type="password" id="passWord">
+       </div>
+       <br>
+       <div>
+        <label for="DOB">DOB:</label>
+        <input type="date" id="DOB">
+       </div>
+       <br> 
+       <div>
+        <label for="Gender">Gender:</label>
+        <input type="radio" name="Gender"><label for="">male</label>
+        <input type="radio" name="Gender"><label for="">female</label>
+       </div>    
+       <br>     
+       <div>
+        <label for="city">city:</label>
+        <select name="city" id="city">
+            <option value="select">select</option>
+            <option value="chennai">chennai</option>
+            <option value="madurai">madurai</option>
+            <option value="trichy">trichy</option>
+        </select>
+       </div>    
+       <br>  
+       <div>
+        <label for="upload">upload Documents:</label>
+        <input type="file" id="upload">
+       </div>    
+       <br>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="submit" value="Cancel">
+        </div>
     </form>
+</div>
 </body>
 </html>
