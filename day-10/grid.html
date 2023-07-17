@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        border: 2px solid;
+        background-color: azure;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+      }
+      .item {
+        border: 2px solid;
+        background-color: blanchedalmond;
+      }
+      .flex-container {
+        display: flex;
+        border: 2px solid;
+        background-color: azure;
+        padding: 10px;
+      }
+      .flex-item {
+        flex: 1 0 auto;
+        border: 1px solid;
+        background-color: bisque;
+        margin: 10px;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid Demo!!</h1>
+    <div class="container">
+      <div class="item" style="grid-column: 3; grid-row: 2">item 1</div>
+      <div class="item" style="grid-column: 1; grid-row: 2">item 2</div>
+      <div class="item">item 3</div>
+      <div class="item">item 4</div>
+      <div class="item">item 5</div>
+      <div class="item">item 6</div>
+    </div>
+    <h1>CSS Flex Demo!!</h1>
+    <div class="flex-container">
+      <div class="flex-item">flex item 1</div>
+      <div class="flex-item">flex item 2</div>
+      <div class="flex-item">flex item 3</div>
+      <div class="flex-item">flex item 4</div>
+      <div class="flex-item">flex item 5</div>
+    </div>
+  </body>
+</html>
